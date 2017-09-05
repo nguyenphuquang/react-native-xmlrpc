@@ -1,0 +1,40 @@
+{
+  "name": "react-native-xmlrpc",
+  "description": "JavaScript XML-RPC client for react-native",
+  "keywords": [
+    "xmlrpc",
+    "xml",
+    "rpc"
+  ],
+  "version": "0.0.1",
+  "preferGlobal": false,
+  "author": "Nguyen Phu Quang <nguyenphuquang@gmail.com> (https://github.com/nguyenphuquang)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nguyenphuquang/react-native-xmlrpc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nguyenphuquang/react-native-xmlrpc/issues"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib/xmlrpc.js",
+  "dependencies": {
+    "buffer": "^5.0.7",
+    "htmlparser2-without-node-native": "^3.9.0",
+    "superagent": "^3.6.0",
+    "xmlbuilder": "^8.2.2"
+  },
+  "devDependencies": {
+    "vows": "0.7.x"
+  },
+  "scripts": {
+    "test": "vows 'test/*.js'"
+  },
+  "engines": {
+    "node": ">=6.0",
+    "npm": ">=1.0.0"
+  },
+  "license": "MIT"
+}
