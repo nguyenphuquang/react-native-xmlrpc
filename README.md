@@ -36,7 +36,7 @@ var xmlrpc = require('react-native-xmlrpc')
 setTimeout(function () {
   // Creates an XML-RPC client. Passes the host information on where to
   // make the XML-RPC calls.
-  var client = xmlrpc.createClient({ host: 'localhost', port: 9090, path: '/'})
+  var client = xmlrpc.createClient({ host: 'your.xmlrpc.host', port: 9090, path: '/'})
 
   // Sends a method call to the XML-RPC server
   client.methodCall('anAction', ['aParam'], function (error, value) {
@@ -45,14 +45,6 @@ setTimeout(function () {
   })
 
 }, 1000)
-```
-
-Output from the example:
-
-```
-XML-RPC server listening on port 9090
-Method call params for 'anAction': aParam
-Method response for 'anAction': aResult
 ```
 
 ### Date/Time Formatting
